@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PT Chongqing Group - Innovate. Connect. Empower.</title>
     
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,6 +35,7 @@
         ul { list-style: none; }
         button { font-family: 'Poppins', sans-serif; cursor: pointer; border: none; }
 
+        /* ===== LOADING SCREEN ===== */
         #loader {
             position: fixed; inset: 0; background: var(--dark);
             display: flex; justify-content: center; align-items: center;
@@ -47,6 +49,7 @@
         }
         @keyframes spin { 100% { transform: rotate(360deg); } }
 
+        /* ===== NAVBAR DYNAMIC ===== */
         nav {
             position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
             padding: 25px 50px; display: flex; justify-content: space-between; align-items: center;
@@ -70,13 +73,14 @@
         .btn-nav { border: 1px solid var(--gold); padding: 10px 25px; border-radius: 30px; color: var(--gold) !important; transition: 0.3s; }
         .btn-nav:hover { background: var(--gold); color: var(--black) !important; }
 
+        /* ===== PAGE SYSTEM ===== */
         .page { display: none; min-height: 100vh; position: relative; padding-top: 120px; }
         .page.active { display: block; animation: pageFade 1s ease; }
         @keyframes pageFade { 0% { opacity: 0; transform: translateY(30px); } 100% { opacity: 1; transform: translateY(0); } }
 
         .page-bg {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-size: cover; background-position: center; background-color: var(--navy); z-index: -2;
+            background-size: cover; background-position: center; z-index: -2;
         }
         .page-overlay {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -84,16 +88,17 @@
             z-index: -1;
         }
 
-        /* ===== BACKGROUND LOKAL ===== */
-        #home .page-bg { background-image: url('assets/bg-home.jpg'); }
-        #about .page-bg { background-image: url('assets/bg-about.jpg'); }
-        #services .page-bg, #divisions .page-bg, #investors .page-bg, #career .page-bg { background-image: url('assets/bg-services.jpg'); }
-        #portfolio .page-bg { background-image: url('assets/bg-portfolio.jpg'); }
-        #news .page-bg { background-image: url('assets/bg-services.jpg'); }
-        #contact .page-bg { background-image: url('assets/bg-contact.jpg'); }
+        /* ===== BACKGROUND DARI FOLDER ASSETS GITHUB ===== */
+        #home .page-bg { background-image: url('assets/1nGgW4VgJEaoleuBatcFTa7xAq8FyjEHpRBGf8NVcbPARxo683svObRkpyyEQQVwLIvkXutOlW8NbWtm8XDuCwp2kLFhQDQtSBm843tD76OMpQ54IAPor6CBsdyRZ6YXI1kEIlbxKbOZNoU_i51RNBWp4OnW_uf1QBwMTAzsiug.jpeg'); }
+        #about .page-bg { background-image: url('assets/Bx8MGYtz6t3c0VtDOfKgmDPpYqHFWTTcwW5rIO49_W7qbJVGnxz_Fb-Ro_vZ6EL0q9oipwUr5tkGE2rhoPu9QVpseEdeMAaTSy1ULQE5miHlCV_gY2ANv2A21fXpwJgp4aQ3bqZ7e4Zpi3kIbJPG3xlPPmGM0mqtUjX7fF-ht7c.jpeg'); }
+        #services .page-bg, #divisions .page-bg { background-image: url('assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg'); }
+        #portfolio .page-bg { background-image: url('assets/bf0fddec-9cd2-4448-ac17-b7a96654a11e.jpeg'); }
+        #news .page-bg, #investors .page-bg, #career .page-bg, #contact .page-bg { background-image: url('assets/jtPLEBUun4wI_du0AFTJ2O4gACzo2Q5F2VdP37zdX_nyCrlQZ6lJMah9OOpwCmGnBYL88KidFSUlxzRR2PxS7Ax0iM8gtknBzk-fk-C5cGR9ItC_Q0ibWA6sIbvhQM4Zc1FLPoB_xnRNmqxzqK1VfxF2V6_8jOMfLKIA5qO8OtoPtZAekKkQvTww-aOk-uswK.jpeg'); }
 
+        /* ===== HOME PAGE ===== */
         #home { display: none; flex-direction: column; justify-content: center; padding-top: 0; padding-bottom: 60px; }
         #home.active { display: flex; }
+        
         .hero-content { text-align: center; max-width: 1000px; margin: 0 auto; padding: 0 20px; }
         .hero-tag { color: var(--gold); letter-spacing: 4px; text-transform: uppercase; font-weight: 600; margin-bottom: 20px; display: block; }
         #home h1 { font-size: 5rem; line-height: 1.1; margin-bottom: 30px; text-shadow: 0 10px 30px rgba(0,0,0,0.8); }
@@ -110,12 +115,14 @@
         .stat-item h3 span { color: var(--gold); }
         .stat-item p { color: var(--silver); margin-top: 5px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; }
 
+        /* ===== GLOBAL SECTION STYLES ===== */
         .section-padding { padding: 100px 50px; }
         .section-title { text-align: center; margin-bottom: 70px; }
         .section-title h6 { color: var(--gold); font-size: 1rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 15px; }
         .section-title h2 { font-size: 3rem; color: var(--white); font-weight: 700; }
         .section-title h2::after { content: ''; display: block; width: 80px; height: 4px; background: var(--gold); margin: 20px auto 0; border-radius: 2px; }
 
+        /* ===== ABOUT PAGE ===== */
         .about-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 60px; align-items: center; }
         .about-img { height: 500px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(212, 175, 55, 0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
         .about-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
@@ -125,6 +132,7 @@
         .feature-item { display: flex; align-items: center; gap: 15px; }
         .feature-icon { width: 50px; height: 50px; background: rgba(212, 175, 55, 0.1); border-radius: 10px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: var(--gold); }
 
+        /* ===== PORTFOLIO PAGE ===== */
         .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .p-item { position: relative; height: 400px; border-radius: 15px; overflow: hidden; cursor: pointer; border: 1px solid rgba(255,255,255,0.1); background: #111; }
         .p-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s ease; filter: brightness(0.8); }
@@ -133,6 +141,7 @@
         .p-cat { color: var(--gold); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; font-weight: 600; }
         .p-title { color: var(--white); font-size: 1.5rem; font-weight: 600; }
 
+        /* ===== SERVICES & DIVISIONS ===== */
         .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .service-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 40px 30px; border-radius: 15px; transition: 0.4s; position: relative; overflow: hidden; }
         .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: 0.4s; }
@@ -142,6 +151,7 @@
         .service-card h4 { font-size: 1.3rem; margin-bottom: 15px; color: var(--white); }
         .service-card p { color: var(--silver); line-height: 1.6; font-size: 0.95rem; }
 
+        /* ===== NEWS PAGE ===== */
         .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         .news-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 15px; overflow: hidden; transition: 0.4s; }
         .news-card:hover { transform: translateY(-5px); border-color: var(--gold); }
@@ -153,6 +163,7 @@
         .news-content h4 { font-size: 1.2rem; margin-bottom: 15px; line-height: 1.4; }
         .news-content p { color: var(--silver); font-size: 0.95rem; margin-bottom: 20px; }
 
+        /* ===== INVESTOR & CAREER ===== */
         .inv-box { display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 30px 40px; margin-bottom: 20px; border-radius: 15px; transition: 0.4s; border-left: 5px solid var(--gold); }
         .inv-box:hover { background: rgba(212, 175, 55, 0.05); transform: translateX(10px); }
 
@@ -162,6 +173,7 @@
         .form-group input, .form-group textarea { width: 100%; padding: 15px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--white); font-family: 'Inter', sans-serif; }
         .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); }
 
+        /* ===== CONTACT PAGE ===== */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
         .contact-info h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--white); }
         .contact-info p { color: var(--silver); margin-bottom: 40px; font-size: 1.1rem; }
@@ -174,6 +186,7 @@
         .btn-submit { width: 100%; background: linear-gradient(45deg, var(--gold), var(--gold-light)); color: var(--black); padding: 15px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: 0.3s; }
         .btn-submit:hover { box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4); }
 
+        /* ===== FOOTER ===== */
         footer { background: rgba(2, 12, 27, 0.98); padding: 80px 50px 30px; border-top: 1px solid rgba(212, 175, 55, 0.2); }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 60px; }
         .footer-col p { color: var(--silver); margin-top: 20px; line-height: 1.8; font-size: 0.95rem; }
@@ -183,6 +196,7 @@
         .footer-col ul li a:hover { color: var(--gold); transform: translateX(5px); }
         .footer-bottom { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05); color: var(--silver); font-size: 0.9rem; }
 
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 992px) {
             .about-grid, .contact-grid { grid-template-columns: 1fr; }
             .news-grid { grid-template-columns: 1fr; }
@@ -204,6 +218,7 @@
 
     <div id="loader"><div class="spinner"></div></div>
 
+    <!-- Navbar -->
     <nav id="navbar">
         <div class="logo" onclick="showPage('home')">
             CHONGQING<span>GROUP</span>
@@ -218,6 +233,7 @@
         </ul>
     </nav>
 
+    <!-- 1. Home Page -->
     <div id="home" class="page active">
         <div class="page-bg"></div>
         <div class="page-overlay"></div>
@@ -238,6 +254,7 @@
         </div>
     </div>
 
+    <!-- 2. About Page -->
     <div id="about" class="page">
         <div class="page-bg"></div><div class="page-overlay"></div>
         <div class="section-padding">
@@ -247,7 +264,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-img">
-                    <img src="assets/bg-about.jpg" alt="Kantor">
+                    <img src="assets/Bx8MGYtz6t3c0VtDOfKgmDPpYqHFWTTcwW5rIO49_W7qbJVGnxz_Fb-Ro_vZ6EL0q9oipwUr5tkGE2rhoPu9QVpseEdeMAaTSy1ULQE5miHlCV_gY2ANv2A21fXpwJgp4aQ3bqZ7e4Zpi3kIbJPG3xlPPmGM0mqtUjX7fF-ht7c.jpeg" alt="Kantor">
                 </div>
                 <div class="about-text">
                     <p>Didirikan dengan visi menjadi pemimpin industri, PT Chongqing Group mengintegrasikan teknologi digital, investasi strategis, dan kreativitas tanpa batas. Kami berkomitmen memberikan nilai tambah bagi para pemangku kepentingan melalui inovasi berkelanjutan.</p>
@@ -256,19 +273,266 @@
                         <div class="feature-item"><div class="feature-icon">🎯</div><div><h4>Visioner</h4><p style="color:var(--silver); font-size:0.85rem">Selalu melihat ke depan</p></div></div>
                         <div class="feature-item"><div class="feature-icon">🚀</div><div><h4>Inovatif</h4><p style="color:var(--silver); font-size:0.85rem">Teknologi terkini</p></div></div>
                         <div class="feature-item"><div class="feature-icon">🤝</div><div><h4>Kolaboratif</h4><p style="color:var(--silver); font-size:0.85rem">Mitra terpercaya</p></div></div>
+                        <div class="feature-item"><div class="feature-icon">💎</div><div><h4>Premium</h4><p style="color:var(--silver); font-size:0.85rem">Kualitas terbaik</p></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Lanjutin page lain disini... -->
+    <!-- 3. Services Page -->
+    <div id="services" class="page">
+        <div class="page-bg"></div><div class="page-overlay"></div>
+        <div class="section-padding">
+            <div class="section-title">
+                <h6>Layanan Kami</h6>
+                <h2>Solusi Bisnis Premium</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="service-card"><div class="s-icon">🎨</div><h4>Corporate Branding</h4><p>Membangun identitas korporat yang kuat dan berkesan di pasar global.</p></div>
+                <div class="service-card"><div class="s-icon">📱</div><h4>UI/UX Design</h4><p>Desain antarmuka pengguna yang intuitif dan modern.</p></div>
+                <div class="service-card"><div class="s-icon">💻</div><h4>Web Development</h4><p>Solusi web korporat berskala enterprise dengan teknologi terkini.</p></div>
+                <div class="service-card"><div class="s-icon">📦</div><h4>Packaging Design</h4><p>Desain kemasan premium yang meningkatkan nilai jual produk.</p></div>
+                <div class="service-card"><div class="s-icon">✨</div><h4>3D & Motion</h4><p>Visualisasi 3D realistis dan animasi grafis sinematik.</p></div>
+                <div class="service-card"><div class="s-icon">📈</div><h4>Digital Strategy</h4><p>Strategi pemasaran digital yang efektif untuk meningkatkan engagement.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Portfolio Page -->
+    <div id="portfolio" class="page">
+        <div class="page-bg"></div><div class="page-overlay"></div>
+        <div class="section-padding">
+            <div class="section-title">
+                <h6>Karya Terbaik Kami</h6>
+                <h2>Portofolio Unggulan</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="p-item">
+                    <img src="assets/1nGgW4VgJEaoleuBatcFTa7xAq8FyjEHpRBGf8NVcbPARxo683svObRkpyyEQQVwLIvkXutOlW8NbWtm8XDuCwp2kLFhQDQtSBm843tD76OMpQ54IAPor6CBsdyRZ6YXI1kEIlbxKbOZNoU_i51RNBWp4OnW_uf1QBwMTAzsiug.jpeg" alt="C-Tech Brand Identity">
+                    <div class="p-overlay"><span class="p-cat">Branding</span><h3 class="p-title">C-Tech Brand Identity</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/Bx8MGYtz6t3c0VtDOfKgmDPpYqHFWTTcwW5rIO49_W7qbJVGnxz_Fb-Ro_vZ6EL0q9oipwUr5tkGE2rhoPu9QVpseEdeMAaTSy1ULQE5miHlCV_gY2ANv2A21fXpwJgp4aQ3bqZ7e4Zpi3kIbJPG3xlPPmGM0mqtUjX7fF-ht7c.jpeg" alt="China Hi-Tech Group">
+                    <div class="p-overlay"><span class="p-cat">Corporate Logo</span><h3 class="p-title">China Hi-Tech Group Logo</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg" alt="Office Exterior">
+                    <div class="p-overlay"><span class="p-cat">Architecture</span><h3 class="p-title">C-Tech Office Exterior</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/bf0fddec-9cd2-4448-ac17-b7a96654a11e.jpeg" alt="Office Interior">
+                    <div class="p-overlay"><span class="p-cat">Interior Design</span><h3 class="p-title">Modern Workspace</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/jtPLEBUun4wI_du0AFTJ2O4gACzo2Q5F2VdP37zdX_nyCrlQZ6lJMah9OOpwCmGnBYL88KidFSUlxzRR2PxS7Ax0iM8gtknBzk-fk-C5cGR9ItC_Q0ibWA6sIbvhQM4Zc1FLPoB_xnRNmqxzqK1VfxF2V6_8jOMfLKIA5qO8OtoPtZAekKkQvTww-aOk-uswK.jpeg" alt="Poster Tech Eatery 1">
+                    <div class="p-overlay"><span class="p-cat">Poster Design</span><h3 class="p-title">Tech Eatery Opening</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Divisions Page -->
+    <div id="divisions" class="page">
+        <div class="page-bg"></div><div class="page-overlay"></div>
+        <div class="section-padding">
+            <div class="section-title">
+                <h6>Struktur Organisasi</h6>
+                <h2>Divisi Perusahaan</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="service-card"><div class="s-icon">🖌️</div><h4>Design Studio</h4><p>Fokus pada branding, UI/UX, dan desain visual korporat.</p></div>
+                <div class="service-card"><div class="s-icon">⚙️</div><h4>Digital Tech</h4><p>Pengembangan perangkat lunak, web, dan aplikasi mobile.</p></div>
+                <div class="service-card"><div class="s-icon">💡</div><h4>Creative Agency</h4><p>Strategi pemasaran digital dan manajemen media sosial.</p></div>
+                <div class="service-card"><div class="s-icon">🎥</div><h4>Media Production</h4><p>Produksi video, sinematografi, dan motion graphics.</p></div>
+                <div class="service-card"><div class="s-icon">🔬</div><h4>Innovation Lab</h4><p>Riset dan pengembangan teknologi AI, VR, dan 3D.</p></div>
+                <div class="service-card"><div class="s-icon">📊</div><h4>Investment</h4><p>Manajemen aset dan inkubasi startup strategis.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. News Page -->
+    <div id="news" class="page">
+        <div class="page-bg"></div><div class="page-overlay"></div>
+        <div class="section-padding">
+            <div class="section-title">
+                <h6>Update Terbaru</h6>
+                <h2>Berita & Artikel</h2>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img"><img src="assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg" alt="News 1"></div>
+                    <div class="news-content">
+                        <span class="news-date">25 Juli 2024</span>
+                        <h4>Pembukaan Kantor C-Tech Baru</h4>
+                        <p>PT Chongqing Group meresmikan gedung perkantaran modern berteknologi tinggi.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img"><img src="assets/jtPLEBUun4wI_du0AFTJ2O4gACzo2Q5F2VdP37zdX_nyCrlQZ6lJMah9OOpwCmGnBYL88KidFSUlxzRR2PxS7Ax0iM8gtknBzk-fk-C5cGR9ItC_Q0ibWA6sIbvhQM4Zc1FLPoB_xnRNmqxzqK1VfxF2V6_8jOMfLKIA5qO8OtoPtZAekKkQvTww-aOk-uswK.jpeg" alt="News 2"></div>
+                    <div class="news-content">
+                        <span class="news-date">26 Juli 2025</span>
+                        <h4>Tech Eatery Bandung</h4>
+                        <p>Peresmian restoran konsep kolaboratif Tech Eatery di Bandung.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img"><img src="assets/bf0fddec-9cd2-4448-ac17-b7a96654a11e.jpeg" alt="News 3"></div>
+                    <div class="news-content">
+                        <span class="news-date">10 Juni 2024</span>
+                        <h4>Layanan Desain Poster C-Tech</h4>
+                        <p>Peluncuran paket layanan desain poster profesional untuk UMKM.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Contact Page -->
+    <div id="contact" class="page">
+        <div class="page-bg"></div><div class="page-overlay"></div>
+        <div class="section-padding">
+            <div class="section-title">
+                <h6>Hubungi Kami</h6>
+                <h2>Mari Bekerja Sama</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Jangan ragu untuk menghubungi kami. Tim kami siap membantu mewujudkan visi bisnis Anda.</p>
+                    <div class="contact-item">
+                        <div class="c-icon">📱</div>
+                        <div class="c-text">
+                            <h5>Telepon / WhatsApp</h5>
+                            <a href="https://wa.me/6283189483134" target="_blank">+62 831-8948-3134</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="c-icon">👥</div>
+                        <div class="c-text">
+                            <h5>Grup Komunitas</h5>
+                            <a href="https://chat.whatsapp.com/KTXEj4Gf2yr2Qx97uU7YBW" target="_blank">Join WhatsApp Group</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="c-icon">📍</div>
+                        <div class="c-text">
+                            <h5>Lokasi Kantor</h5>
+                            <p>Jl. Teknologi No. 10, Bandung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="event.preventDefault(); alert('Pesan terkirim! Kami akan segera menghubungi Anda via WhatsApp.'); window.location.href='https://wa.me/6283189483134';">
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="email@domain.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea rows="4" placeholder="Ceritakan proyek Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo" onclick="showPage('home')" style="margin-bottom: 20px;">
+                    CHONGQING<span>GROUP</span>
+                </div>
+                <p>Building Tomorrow, Connecting the Future. Kami berkomitmen menghadirkan inovasi dan solusi terbaik untuk mitra bisnis kami.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Perusahaan</h5>
+                <ul>
+                    <li><a onclick="showPage('about')">Tentang Kami</a></li>
+                    <li><a onclick="showPage('divisions')">Divisi</a></li>
+                    <li><a onclick="showPage('news')">Berita</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Bisnis</h5>
+                <ul>
+                    <li><a onclick="showPage('services')">Layanan</a></li>
+                    <li><a onclick="showPage('portfolio')">Portofolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Kontak</h5>
+                <ul>
+                    <li><a href="https://wa.me/6283189483134" target="_blank">📱 +62 831-8948-3134</a></li>
+                    <li><a href="https://chat.whatsapp.com/KTXEj4Gf2yr2Qx97uU7YBW" target="_blank">👥 WhatsApp Group</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PT Chongqing Group. All Rights Reserved. Innovate • Connect • Empower.</p>
+        </div>
+    </footer>
 
     <script>
-        // Tambahin JS buat showPage + loader + navbar scroll + counter disini
+        // ===== LOADER =====
         window.addEventListener('load', () => {
             document.getElementById('loader').classList.add('hidden');
+            initCounter();
         });
+
+        // ===== NAVBAR SCROLL EFFECT =====
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // ===== MULTI-PAGE NAVIGATION =====
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            
+            document.getElementById(pageId).classList.add('active');
+
+            const navLinks = document.querySelectorAll('.nav-links li a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            const activeLink = Array.from(navLinks).find(link => link.getAttribute('onclick').includes(`'${pageId}'`));
+            if (activeLink) activeLink.classList.add('active');
+
+            window.scrollTo(0, 0);
+        }
+
+        // ===== COUNTER ANIMATION =====
+        function initCounter() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const current = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (current < target) {
+                        counter.innerText = Math.ceil(current + inc);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
     </script>
 </body>
 </html>
