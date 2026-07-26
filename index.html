@@ -88,16 +88,11 @@
             z-index: -1;
         }
 
-        /* ===== BACKGROUND SETIAP HALAMAN (DARI FOLDER ASSETS) ===== */
-        /* Foto 1 */
-        #home .page-bg, #services .page-bg { background-image: url('assets/1nGgW4VgJEaoleuBatcFTa7xAq8FyjEHpRBGf8NVcbPARxo683svObRkpyyEQQVwLIvkXutOlW8NbWtm8XDuCwp2kLFhQDQtSBm843tD76OMpQ54IAPor6CBsdyRZ6YXI1kEIlbxKbOZNoU_i51RNBWp4OnW_uf1QBwMTAzsiug.jpeg'); }
-        /* Foto 2 */
-        #about .page-bg, #portfolio .page-bg { background-image: url('assets/Bx8MGYtz6t3c0VtDOfKgmDPpYqHFWTTcwW5rIO49_W7qbJVGnxz_Fb-Ro_vZ6EL0q9oipwUr5tkGE2rhoPu9QVpseEdeMAaTSy1ULQE5miHlCV_gY2ANv2A21fXpwJgp4aQ3bqZ7e4Zpi3kIbJPG3xlPPmGM0mqtUjX7fF-ht7c.jpeg'); }
-        /* Foto 3 */
-        #divisions .page-bg, #news .page-bg { background-image: url('assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg'); }
-        /* Foto 4 */
-        #investors .page-bg, #career .page-bg { background-image: url('assets/bf0fddec-9cd2-4448-ac17-b7a96654a11e.jpeg'); }
-        /* Foto 5 */
+        /* ===== BACKGROUND SETIAP HALAMAN (MENGGUNAKAN 5 FOTO PERTAMA) ===== */
+        #home .page-bg { background-image: url('assets/1nGgW4VgJEaoleuBatcFTa7xAq8FyjEHpRBGf8NVcbPARxo683svObRkpyyEQQVwLIvkXutOlW8NbWtm8XDuCwp2kLFhQDQtSBm843tD76OMpQ54IAPor6CBsdyRZ6YXI1kEIlbxKbOZNoU_i51RNBWp4OnW_uf1QBwMTAzsiug.jpeg'); }
+        #about .page-bg { background-image: url('assets/Bx8MGYtz6t3c0VtDOfKgmDPpYqHFWTTcwW5rIO49_W7qbJVGnxz_Fb-Ro_vZ6EL0q9oipwUr5tkGE2rhoPu9QVpseEdeMAaTSy1ULQE5miHlCV_gY2ANv2A21fXpwJgp4aQ3bqZ7e4Zpi3kIbJPG3xlPPmGM0mqtUjX7fF-ht7c.jpeg'); }
+        #services .page-bg, #divisions .page-bg { background-image: url('assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg'); }
+        #portfolio .page-bg, #news .page-bg { background-image: url('assets/bf0fddec-9cd2-4448-ac17-b7a96654a11e.jpeg'); }
         #contact .page-bg { background-image: url('assets/jtPLEBUun4wI_du0AFTJ2O4gACzo2Q5F2VdP37zdX_nyCrlQZ6lJMah9OOpwCmGnBYL88KidFSUlxzRR2PxS7Ax0iM8gtknBzk-fk-C5cGR9ItC_Q0ibWA6sIbvhQM4Zc1FLPoB_xnRNmqxzqK1VfxF2V6_8jOMfLKIA5qO8OtoPtZAekKkQvTww-aOk-uswK.jpeg'); }
 
         /* ===== HOME PAGE ===== */
@@ -137,7 +132,7 @@
         .feature-item { display: flex; align-items: center; gap: 15px; }
         .feature-icon { width: 50px; height: 50px; background: rgba(212, 175, 55, 0.1); border-radius: 10px; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; color: var(--gold); }
 
-        /* ===== PORTFOLIO PAGE ===== */
+        /* ===== PORTFOLIO PAGE (MENGGUNAKAN 8 FOTO BARU) ===== */
         .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .p-item { position: relative; height: 400px; border-radius: 15px; overflow: hidden; cursor: pointer; border: 1px solid rgba(255,255,255,0.1); background: #111; }
         .p-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s ease; filter: brightness(0.8); }
@@ -167,16 +162,6 @@
         .news-date { color: var(--gold); font-size: 0.85rem; margin-bottom: 10px; font-weight: 600; }
         .news-content h4 { font-size: 1.2rem; margin-bottom: 15px; line-height: 1.4; }
         .news-content p { color: var(--silver); font-size: 0.95rem; margin-bottom: 20px; }
-
-        /* ===== INVESTOR & CAREER ===== */
-        .inv-box { display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); padding: 30px 40px; margin-bottom: 20px; border-radius: 15px; transition: 0.4s; border-left: 5px solid var(--gold); }
-        .inv-box:hover { background: rgba(212, 175, 55, 0.05); transform: translateX(10px); }
-
-        .career-form { max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.03); padding: 40px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); }
-        .form-group { margin-bottom: 20px; text-align: left; }
-        .form-group label { display: block; margin-bottom: 8px; color: var(--white); font-weight: 500; }
-        .form-group input, .form-group textarea { width: 100%; padding: 15px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: var(--white); font-family: 'Inter', sans-serif; }
-        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--gold); }
 
         /* ===== CONTACT PAGE ===== */
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -304,7 +289,7 @@
         </div>
     </div>
 
-    <!-- 4. Portfolio Page -->
+    <!-- 4. Portfolio Page (Menggunakan 8 Foto Baru) -->
     <div id="portfolio" class="page">
         <div class="page-bg"></div><div class="page-overlay"></div>
         <div class="section-padding">
@@ -314,24 +299,36 @@
             </div>
             <div class="portfolio-grid">
                 <div class="p-item">
-                    <img src="assets/1nGgW4VgJEaoleuBatcFTa7xAq8FyjEHpRBGf8NVcbPARxo683svObRkpyyEQQVwLIvkXutOlW8NbWtm8XDuCwp2kLFhQDQtSBm843tD76OMpQ54IAPor6CBsdyRZ6YXI1kEIlbxKbOZNoU_i51RNBWp4OnW_uf1QBwMTAzsiug.jpeg" alt="C-Tech Brand Identity">
-                    <div class="p-overlay"><span class="p-cat">Branding</span><h3 class="p-title">C-Tech Brand Identity</h3></div>
+                    <img src="assets/IMG_20260720_195911.jpg" alt="Project 1">
+                    <div class="p-overlay"><span class="p-cat">Photography</span><h3 class="p-title">Moment Capture</h3></div>
                 </div>
                 <div class="p-item">
-                    <img src="assets/Bx8MGYtz6t3c0VtDOfKgmDPpYqHFWTTcwW5rIO49_W7qbJVGnxz_Fb-Ro_vZ6EL0q9oipwUr5tkGE2rhoPu9QVpseEdeMAaTSy1ULQE5miHlCV_gY2ANv2A21fXpwJgp4aQ3bqZ7e4Zpi3kIbJPG3xlPPmGM0mqtUjX7fF-ht7c.jpeg" alt="China Hi-Tech Group">
-                    <div class="p-overlay"><span class="p-cat">Corporate Logo</span><h3 class="p-title">China Hi-Tech Group Logo</h3></div>
+                    <img src="assets/IMG_20260725_072448.jpg" alt="Project 2">
+                    <div class="p-overlay"><span class="p-cat">Photography</span><h3 class="p-title">Visual Storytelling</h3></div>
                 </div>
                 <div class="p-item">
-                    <img src="assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg" alt="Office Exterior">
-                    <div class="p-overlay"><span class="p-cat">Architecture</span><h3 class="p-title">C-Tech Office Exterior</h3></div>
+                    <img src="assets/Screenshot_2026-07-25-00-52-30-49.jpg" alt="Project 3">
+                    <div class="p-overlay"><span class="p-cat">Digital Campaign</span><h3 class="p-title">Social Media Assets</h3></div>
                 </div>
                 <div class="p-item">
-                    <img src="assets/bf0fddec-9cd2-4448-ac17-b7a96654a11e.jpeg" alt="Office Interior">
-                    <div class="p-overlay"><span class="p-cat">Interior Design</span><h3 class="p-title">Modern Workspace</h3></div>
+                    <img src="assets/6e79229e-cba1-4a52-8cd4-88a64c157180.png" alt="Project 4">
+                    <div class="p-overlay"><span class="p-cat">Branding</span><h3 class="p-title">Corporate Logo Design</h3></div>
                 </div>
                 <div class="p-item">
-                    <img src="assets/jtPLEBUun4wI_du0AFTJ2O4gACzo2Q5F2VdP37zdX_nyCrlQZ6lJMah9OOpwCmGnBYL88KidFSUlxzRR2PxS7Ax0iM8gtknBzk-fk-C5cGR9ItC_Q0ibWA6sIbvhQM4Zc1FLPoB_xnRNmqxzqK1VfxF2V6_8jOMfLKIA5qO8OtoPtZAekKkQvTww-aOk-uswK.jpeg" alt="Poster Tech Eatery 1">
-                    <div class="p-overlay"><span class="p-cat">Poster Design</span><h3 class="p-title">Tech Eatery Opening</h3></div>
+                    <img src="assets/0d7b6b3b-4133-468b-8d2a-e1d01a5c56b6.png" alt="Project 5">
+                    <div class="p-overlay"><span class="p-cat">Marketing</span><h3 class="p-title">Promotional Material</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/b305e177-7d1b-47c0-97ee-3801e313e14f.png" alt="Project 6">
+                    <div class="p-overlay"><span class="p-cat">Branding</span><h3 class="p-title">Chongqing Group Identity</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/56af2afc-c138-4872-903b-216f28b4dd40.png" alt="Project 7">
+                    <div class="p-overlay"><span class="p-cat">Interior Branding</span><h3 class="p-title">Office Wall Branding</h3></div>
+                </div>
+                <div class="p-item">
+                    <img src="assets/e14fbe1c-c57e-4054-898e-fe51f29a1ec2.png" alt="Project 8">
+                    <div class="p-overlay"><span class="p-cat">Event Design</span><h3 class="p-title">Grand Opening Poster</h3></div>
                 </div>
             </div>
         </div>
@@ -366,7 +363,7 @@
             </div>
             <div class="news-grid">
                 <div class="news-card">
-                    <div class="news-img"><img src="assets/EQG_h39BHqejUhbOAvwGmf55PAZsurw1L3stzht_0LeHIgmdH99g6Y1VwqLmiGpXa4RaUcbQHHfHGCanWgL1MYbKv2JJRbYKngQY1Qyr_5dEmleb0bXIR7kJ2LlIbT95yaKwxoywnmJxpMta_H-AvV6YVjFCkL_I2yI6diuJfK4.jpeg" alt="News 1"></div>
+                    <div class="news-img"><img src="assets/1nGgW4VgJEaoleuBatcFTa7xAq8FyjEHpRBGf8NVcbPARxo683svObRkpyyEQQVwLIvkXutOlW8NbWtm8XDuCwp2kLFhQDQtSBm843tD76OMpQ54IAPor6CBsdyRZ6YXI1kEIlbxKbOZNoU_i51RNBWp4OnW_uf1QBwMTAzsiug.jpeg" alt="News 1"></div>
                     <div class="news-content">
                         <span class="news-date">25 Juli 2024</span>
                         <h4>Pembukaan Kantor C-Tech Baru</h4>
@@ -374,7 +371,7 @@
                     </div>
                 </div>
                 <div class="news-card">
-                    <div class="news-img"><img src="assets/jtPLEBUun4wI_du0AFTJ2O4gACzo2Q5F2VdP37zdX_nyCrlQZ6lJMah9OOpwCmGnBYL88KidFSUlxzRR2PxS7Ax0iM8gtknBzk-fk-C5cGR9ItC_Q0ibWA6sIbvhQM4Zc1FLPoB_xnRNmqxzqK1VfxF2V6_8jOMfLKIA5qO8OtoPtZAekKkQvTww-aOk-uswK.jpeg" alt="News 2"></div>
+                    <div class="news-img"><img src="assets/e14fbe1c-c57e-4054-898e-fe51f29a1ec2.png" alt="News 2"></div>
                     <div class="news-content">
                         <span class="news-date">26 Juli 2025</span>
                         <h4>Tech Eatery Bandung</h4>
